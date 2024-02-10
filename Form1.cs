@@ -94,12 +94,12 @@ namespace MathGame
 
             foreach (Button button in buttonList){
                 button.Text = result + random.Next(0, 20 + 1).ToString();
-                button.ForeColor = Color.White;
+               // button.ForeColor = Color.White;
             }
 
             QuestionButton = buttonList[random.Next(buttonList.Count)];
             QuestionButton.Text = result.ToString();
-            QuestionButton.ForeColor = Color.Green;
+           // QuestionButton.ForeColor = Color.Green;
 
             if (cbNextQuestion.Checked){
                 timer1.Interval = 1000;
